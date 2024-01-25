@@ -23,4 +23,9 @@ RUN pip install jupyterlab \
                 reno @git+https://github.com/openstack/reno.git@81587f616f17904336cdc431e25c42b46cd75b8f \
                 sphinxcontrib-katex==0.9.9 
 
-ENTRYPOINT ["jupyter", "lab", "--NotebookApp.token='8e34c90d7855df144bedcd8a1b5274769c7c11c86242ff66'", "--allow-root", "--ip=0.0.0.0", "--port=8080"]
+ENTRYPOINT ["jupyter", \
+            "lab", \
+            "--NotebookApp.token='8e34c90d7855df144bedcd8a1b5274769c7c11c86242ff66'", \
+            "--allow-root", \
+            "--ip=0.0.0.0", \
+            "--port=8080"]
