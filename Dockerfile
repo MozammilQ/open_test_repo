@@ -23,5 +23,5 @@ RUN pip install 'Sphinx>=6.0,<7.2'
 RUN pip install 'reno @git+https://github.com/openstack/reno.git@81587f616f17904336cdc431e25c42b46cd75b8f'
 RUN pip install 'sphinxcontrib-katex==0.9.9'
 
-RUN jupyter lab --NotebookApp.token='8e34c90d7855df144bedcd8a1b5274769c7c11c86242ff66' --allow-root --ip=0.0.0.0 --port=8080
+CMD ["jupyter lab", "--NotebookApp.token='8e34c90d7855df144bedcd8a1b5274769c7c11c86242ff66'", "--allow-root", "--ip=0.0.0.0", "--port=8080"]
   
