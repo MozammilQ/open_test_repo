@@ -171,10 +171,10 @@ int main()
 	
 	
 	
-     	double *A = (floatType*) malloc(sizeA);
-     	double *U = (floatType*) malloc(sizeU);
-     	double *S = (floatType*) malloc(sizeS);
-     	double *V = (floatType*) malloc(sizeV);
+     	double *A = (double*) malloc(sizeA);
+     	double *U = (double*) malloc(sizeU);
+     	double *S = (double*) malloc(sizeS);
+     	double *V = (double*) malloc(sizeV);
 
 
 	// Initialize A with data
