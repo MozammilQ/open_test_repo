@@ -133,7 +133,6 @@ int main()
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	typedef double floatType;
      
      	cudaDataType_t cuda_datatype = CUDA_R_64F;
        	
@@ -165,22 +164,22 @@ int main()
       	size_t elementsV = 4;
 	
 	
-	size_t sizeA = sizeof(floatType) * elementsA;
-     	size_t sizeU = sizeof(floatType) * elementsU;
-     	size_t sizeS = sizeof(floatType) * elementsS;
-     	size_t sizeV = sizeof(floatType) * elementsV;
+	size_t sizeA = sizeof(double) * elementsA;
+     	size_t sizeU = sizeof(double) * elementsU;
+     	size_t sizeS = sizeof(double) * elementsS;
+     	size_t sizeV = sizeof(double) * elementsV;
 	
 	
 	
-     	floatType *A = (floatType*) malloc(sizeA);
-     	floatType *U = (floatType*) malloc(sizeU);
-     	floatType *S = (floatType*) malloc(sizeS);
-     	floatType *V = (floatType*) malloc(sizeV);
+     	double *A = (floatType*) malloc(sizeA);
+     	double *U = (floatType*) malloc(sizeU);
+     	double *S = (floatType*) malloc(sizeS);
+     	double *V = (floatType*) malloc(sizeV);
 
 
 	// Initialize A with data
 	printf("\n\nInitializing A with data matrix\n");
-	floatType data[rows][cols] = {{1, 2,}, { 3, 4}};
+	double data[rows][cols] = {{1, 2,}, { 3, 4}};
 	initialize_matrix(A, data);
 	display_matrix(A, rows);
 
