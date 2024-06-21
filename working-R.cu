@@ -179,7 +179,7 @@ int main()
 
 	// Initialize A with data
 	printf("\n\nInitializing A with data matrix\n");
-	double data[rows][cols] = {{1, 2,}, { 3, 4}};
+	double data[2][2] = {{1, 2,}, { 3, 4}};
 	initialize_matrix(A, data);
 	display_matrix(A, rows);
 
